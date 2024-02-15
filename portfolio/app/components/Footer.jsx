@@ -10,11 +10,11 @@
 
 const Footer = () => {
     return (
-        <footer className="pt-10 bg-black">
-            <div className="max-w-screen-xl mx-auto px-4 md:px-8 justify-center">
+        <footer className="pt-10 ">
+            <div className="max-w-screen-xl  mx-auto px-4 md:px-8 justify-center">
              
               
-                <div className="mt-10 py-10 border-t border-gray-700 items-center justify-center sm:flex">
+                <div className="mt-10 py-10 border-gray-700 items-center justify-center sm:flex">
                     
                     <div className="flex items-center gap-x-6 text-gray-400 mt-6">
                         <a href="javascript:void()">
