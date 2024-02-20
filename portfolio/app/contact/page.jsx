@@ -26,7 +26,7 @@ export default function Contact() {
                 </div>
                 <div className="mt-12 max-w-lg mx-auto">
                     <form
-                        onSubmit={(e) => e.preventDefault()}
+                        // onSubmit={(e) => e.preventDefault()}
                         className="space-y-5"
                     >
                         <div className="flex flex-col items-center gap-y-5 gap-x-6 [&>*]:w-full sm:flex-row">
