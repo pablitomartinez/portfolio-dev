@@ -10,8 +10,8 @@
 export default function About() {
   return (
       <section className="bg-black relative max-w-screen-xl mx-auto py-4 px-4 md:px-8">
-          <div className="absolute top-0 left-0 w-full h-full bg-white opacity-40"></div>
           <div className="relative z-10 gap-5 items-center lg:flex">
+            
               <div className="flex-1 max-w-lg py-5 sm:mx-auto sm:text-center lg:max-w-max lg:text-left">
                   <h3 className="text-3xl text-gray-800 font-semibold md:text-4xl">
                       build your websites with <span className="text-indigo-600">Experiencie</span>
@@ -25,6 +25,7 @@ export default function About() {
                       Try it out
                   </a>
               </div>
+
               <div className="flex-1 max-w-lg py-5 bg-slate-900 sm:mx-auto sm:text-center lg:max-w-max lg:text-left">
                   <h3 className="text-3xl text-indigo-600 font-semibold md:text-4xl">
                    Experience
