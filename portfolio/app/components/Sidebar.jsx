@@ -5,12 +5,49 @@
 //     <h1>Sidebar</h1>
 //   )
 // }
+'use client'
 import { useEffect, useState } from "react";
 import Footer from "./Footer";
+
+//link sidebar
+const links = [
+    { 
+        name: 'Home', 
+        href: '/dashboard', 
+        // icon: HomeIcon
+    },
+    {
+        name: 'ABOUT',
+        href: '/dashboard/invoices',
+        // icon: DocumentDuplicateIcon,
+    },
+    { 
+        name: 'WORK',
+        href: '/dashboard/customers', 
+        // icon: UserGroupIcon 
+    },
+    { 
+        name: 'WORK',
+        href: '/dashboard/customers', 
+        // icon: UserGroupIcon 
+    },
+    { 
+        name: 'SKILL',
+        href: '/dashboard/customers', 
+        // icon: UserGroupIcon 
+    },
+    { 
+        name: 'CONTACT',
+        href: '/dashboard/customers', 
+        // icon: UserGroupIcon 
+    },
+    
+  ];
 
 
 // NavLink component
 const NavLink = ({ ...props }) => {
+    // console.log(props);
     const {
         children,
         href = "",
@@ -35,6 +72,22 @@ const NavLink = ({ ...props }) => {
 };
 
 // Sections List
+// const SectionsList = ({ items }) => (
+//     <div className='text-gray-600 px-4 md:px-8'>
+//         <ul>
+//             {items?.map((item, idx) => (
+//                 <li key={idx}>
+//                     <NavLink
+//                         href={item?.href}
+//                         active='text-gray-900 border-indigo-600'
+//                         className='block w-full py-10 px-4 border-l hover:border-indigo-600 hover:text-gray-900 duration-150'>
+//                         {item?.name}
+//                     </NavLink>
+//                 </li>
+//             ))}
+//         </ul>
+//     </div>
+// );
 const SectionsList = ({ items }) => (
     <div className='text-gray-600 px-4 md:px-8'>
         <ul>
@@ -53,15 +106,16 @@ const SectionsList = ({ items }) => (
 );
 
 
+
+
 const Sidebar = () => {
     const lessons = {
         options: [
-            { name: "ABOUT", href: "javascript:void(0)" }, 
-            { name: "WORK", href: "javascript:void(0)" }, 
-            { name: "SKILL", href: "javascript:void(0)" }, 
-            { name: "CONTACT", href: "javascript:void(0)" }, 
-        ]
-    }
+            { name: "ABOUT", href: "/" }, 
+            { name: "WORK", href: "/work" }, 
+            { name: "SKILL", href: "/skill" }, 
+            { name: "CONTACT", href: "/contact" }, 
+        ]};
 
     return (
         <>  <div className="relative h-screen flex top-0 left-0 border-r bg-white space-y-8 overflow-auto sm:w-80 justify-center">
